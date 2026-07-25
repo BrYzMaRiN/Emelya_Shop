@@ -1350,10 +1350,10 @@ body {
   .footer-left { gap: 20px; }
   .footer-right { gap: 20px; }
   .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
-  .modal-content { grid-template-columns: 1fr; max-width: 450px; }
-  .modal-main-img { aspect-ratio: auto; max-height: 50vh; }
-  .modal-main-img img { object-fit: contain; }
-  .modal { padding: 16px; }
+  .modal-content { grid-template-columns: 1fr; max-width: 450px; max-height: 90vh; overflow-y: auto; }
+  .modal-main-img { aspect-ratio: auto; overflow: visible; max-height: none; }
+  .modal-main-img img { object-fit: contain; height: auto; max-height: 60vh; }
+  .modal { padding: 8px; align-items: flex-start; }
   .modal-info { padding: 20px; }
 }
 
