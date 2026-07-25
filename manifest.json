@@ -1,0 +1,31 @@
+{
+  "name": "Emelya Shop",
+  "short_name": "Emelya",
+  "description": "Кастомная джинсовая одежда в панковском стиле",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0c0c0c",
+  "theme_color": "#fc1d18",
+  "icons": [
+    {
+      "src": "images/clear-logo-white.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "images/clear-logo-white.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "images/clear-logo-white.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "images/clear-logo-white.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: YandexMedia
+Disallow: /
+
+User-agent: YandexVideo
+Disallow: /
+
+User-agent: YandexFavicons
+Disallow: /
+
+User-agent: YandexWebmaster
+Disallow: /
+
+User-agent: YandexPagechecker
+Disallow: /
+
+User-agent: YandexImageResizer
+Disallow: /
+
+User-agent: YandexDirect
+Disallow: /
+
+User-agent: YandexMetrika
+Disallow: /
+
+User-agent: YandexNews
+Disallow: /
+
+User-agent: YandexCatalog
+Disallow: /
+
+User-agent: YandexMarket
+Disallow: /
+
+User-agent: YandexLocal
+Disallow: /
+
+User-agent: YandexMaps
+Disallow: /
+
+User-agent: YandexBlog
+Disallow: /
+
+User-agent: YandexForum
+Disallow: /
+
+User-agent: YandexSchool
+Disallow: /
+
+User-agent: YandexCal
+Disallow: /
+
+User-agent: YandexRss
+Disallow: /
+
+User-agent: YandexSvn
+Disallow: /
+
+User-agent: YandexPagechecker
+Disallow: /
+
+User-agent: YandexMetrika
+Disallow: /
+
+User-agent: *
+Allow: /

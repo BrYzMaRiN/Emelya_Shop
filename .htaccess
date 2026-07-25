@@ -1,0 +1,21 @@
+# Block Yandex image recognition
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff|ico)$">
+        Header set X-Robots-Tag "noindex, noimageindex, nosnippet, noarchive, max-image-preview:none"
+    </FilesMatch>
+</IfModule>
+
+# Block Yandex bots at server level
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} (YandexBot|YandexImages|YandexMedia|YandexVideo|YandexFavicons|YandexWebmaster|YandexPagechecker|YandexImageResizer|YandexDirect|YandexMetrika|YandexNews|YandexCatalog|YandexMarket|YandexLocal|YandexMaps|YandexBlog|YandexForum|YandexSchool|YandexCal|YandexRss|YandexSvn) [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# Prevent image hotlinking
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_REFERER} !^$
+    RewriteCond %{HTTP_REFERER} !^https?://(www\.)?emelyashop\.ru [NC]
+    RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [F,NC]
+</IfModule>
