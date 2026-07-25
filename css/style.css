@@ -1337,7 +1337,7 @@ body {
   .nav { display: none; }
   .burger { display: flex; }
   .hero { height: 75vh; min-height: 450px; }
-  .hero-title { font-size: clamp(2.8rem, 12vw, 4.5rem); }
+  .hero-title { font-size: clamp(4rem, 18vw, 7rem); }
   .hero-row { flex-direction: column; align-items: flex-start; }
   .contacts-grid { grid-template-columns: 1fr; }
   .philosophy-grid { grid-template-columns: 1fr; }
