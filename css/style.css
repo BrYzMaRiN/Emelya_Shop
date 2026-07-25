@@ -1357,7 +1357,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .works-grid { grid-template-columns: 1fr; }
   .catalog-grid { grid-template-columns: 1fr 1fr; }
 }
 
