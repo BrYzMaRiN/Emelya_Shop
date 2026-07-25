@@ -1676,8 +1676,11 @@ body {
 /* ---- Responsive additions ---- */
 @media (max-width: 768px) {
   .social-feed-grid { grid-template-columns: repeat(3, 1fr); }
-  .newsletter-form { flex-direction: column; }
+  .newsletter-form { flex-direction: column; overflow: hidden; }
   .newsletter-input { border-right: 1px solid var(--border); border-bottom: none; }
+  .newsletter-input:last-of-type { border-bottom: 1px solid var(--border); }
+  .newsletter-submit { width: 100%; border-top: none; }
+  .newsletter-success { right: 0; font-size: 0.9375rem; letter-spacing: 0.06em; }
   .contacts-bordered { grid-template-columns: 1fr; }
 }
 
