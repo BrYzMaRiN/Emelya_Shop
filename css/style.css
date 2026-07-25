@@ -185,14 +185,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 50%;
   height: 100%;
   background: var(--text);
-  transition: transform 0.3s var(--ease);
+  transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
 }
 .burger span:nth-child(2)::before { left: 0; transform-origin: left center; }
 .burger span:nth-child(2)::after { right: 0; transform-origin: right center; }
 
 .burger.active span:nth-child(1) { transform: translate(0, 6.5px) rotate(45deg); }
-.burger.active span:nth-child(2)::before { transform: translateX(-120%); }
-.burger.active span:nth-child(2)::after { transform: translateX(120%); }
+.burger.active span:nth-child(2)::before { transform: translateX(-120%); opacity: 0; }
+.burger.active span:nth-child(2)::after { transform: translateX(120%); opacity: 0; }
 .burger.active span:nth-child(3) { transform: translate(0, -6.5px) rotate(-45deg); }
 
 /* Mobile Menu */
