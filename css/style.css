@@ -172,8 +172,27 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform-origin: center;
 }
 
+/* Middle bar split into two halves */
+.burger span:nth-child(2) {
+  position: relative;
+  background: transparent;
+}
+.burger span:nth-child(2)::before,
+.burger span:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: var(--text);
+  transition: transform 0.3s var(--ease);
+}
+.burger span:nth-child(2)::before { left: 0; transform-origin: left center; }
+.burger span:nth-child(2)::after { right: 0; transform-origin: right center; }
+
 .burger.active span:nth-child(1) { transform: translate(0, 6.5px) rotate(45deg); }
-.burger.active span:nth-child(2) { transform: scaleX(0); }
+.burger.active span:nth-child(2)::before { transform: translateX(-120%); }
+.burger.active span:nth-child(2)::after { transform: translateX(120%); }
 .burger.active span:nth-child(3) { transform: translate(0, -6.5px) rotate(-45deg); }
 
 /* Mobile Menu */
