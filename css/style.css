@@ -171,15 +171,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: all 0.3s var(--ease);
 }
 
-.burger.active span:nth-child(1) { transform: rotate(45deg) translate(0, 3.25px); }
+.burger.active span:nth-child(1) { transform: rotate(45deg) translate(0, 6.5px); }
 .burger.active span:nth-child(2) { opacity: 0; }
-.burger.active span:nth-child(3) { transform: rotate(-45deg) translate(0, -3.25px); }
+.burger.active span:nth-child(3) { transform: rotate(-45deg) translate(0, -6.5px); }
 
 /* Mobile Menu */
 .mobile-menu {
   display: none;
   position: fixed;
-  top: calc(var(--header-h) + 37px);
+  top: var(--header-h);
   left: 0; right: 0; bottom: 0;
   background: var(--bg);
   flex-direction: column;
