@@ -1,4 +1,4 @@
-﻿/* Catalog page — extends style.css */
+/* Catalog page — extends style.css */
 .catalog-hero {
   padding: calc(var(--header-h) + 50px) 0 50px;
   border-bottom: 1px solid var(--border);
@@ -74,7 +74,8 @@
 
 @media (max-width: 768px) {
   .modal-content { grid-template-columns: 1fr; max-width: 450px; }
-  .modal-main-img { aspect-ratio: 1; }
+  .modal-main-img { aspect-ratio: auto; max-height: 60vh; }
+  .modal-main-img img { object-fit: contain; }
   .modal { padding: 16px; }
   .modal-info { padding: 20px; }
   .modal-thumb { flex: 0 0 56px; }
