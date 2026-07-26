@@ -1708,6 +1708,7 @@ body {
   .newsletter-submit { width: 100%; border-top: none; }
   .newsletter-success { right: 0; font-size: 0.9375rem; letter-spacing: 0.06em; }
   .contacts-bordered { grid-template-columns: 1fr; }
+  .contact-bordered:nth-child(odd) { border-right: none; }
 }
 
 /* ---- Glitch Easter Egg ---- */
